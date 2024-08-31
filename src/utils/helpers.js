@@ -1,6 +1,7 @@
-export const BuildUrl = (baseUrl, route, query) => {
+export const ComposeUrl = (baseUrl, route, api_key, page = 1) => {
     const url = new URL(baseUrl);
     url.pathname += route;
-    Object.keys(query).forEach(key => url.searchParams.append(key, query[key]))
+    url.searchParams.append("api_key", api_key);
+    url.searchParams.append("page", page)
     return url.toString();
 }

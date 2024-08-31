@@ -7,6 +7,7 @@ const App = () => {
         <Routes>
             <Route path="/" element={<MainLayout />}>
                 <Route index element={<HomePage />} />
+                <Route path="home" element={<HomePage />} />
             </Route>
         </Routes>
     );
