@@ -1,5 +1,4 @@
 .menu {
-
     margin-left: 32px;
 }
 
@@ -9,24 +8,4 @@
     justify-content: flex-start;
     align-items: center;
     list-style-type: none;
-    background-color: green;
-}
-
-.menu__item {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
-.menu__item:not(:last-of-type) {
-    margin-right: 16px;
-}
-
-.menu__link {
-    display: flex;
-    background-color: grey;
-
-    text-decoration: none;
-    padding: 5px;
 }

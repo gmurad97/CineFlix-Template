@@ -1,5 +1,5 @@
 .logo {
-    width: 100px;
+    width: 116px;
     height: auto;
 }
 
@@ -8,6 +8,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    padding: 8px;
 }
 
 .logo__img {
