@@ -8,12 +8,12 @@ const Navbar = () => {
     const menuItem = [
         {
             "name": "Home",
-            "link": "/home",
+            "link": "/",
             "dropdown": []
         },
         {
             "name": "Hollywood",
-            "link": "/holywood",
+            "link": "/hollywood",
             "dropdown": []
         },
         {
@@ -22,15 +22,15 @@ const Navbar = () => {
             "dropdown": [
                 {
                     "name": "Action",
-                    "link": "/action"
+                    "link": "/bollywood/action"
                 },
                 {
                     "name": "Family",
-                    "link": "/family"
+                    "link": "/bollywood/family"
                 },
                 {
                     "name": "Comedy",
-                    "link": "/comedy"
+                    "link": "/bollywood/comedy"
                 }
             ]
         },
@@ -59,7 +59,7 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <div className="navbar__group">
-                <Logo img={LogoDarkPng} link="/home" />
+                <Logo img={LogoDarkPng} link="/" />
                 <Menu items={menuItem} />
             </div>
             <Search />

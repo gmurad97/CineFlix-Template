@@ -1,0 +1,15 @@
+.section__content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 48px 96px;
+}
+
+.section__title{
+    font-size: 32px;
+    color: #FFFFFF;
+    margin-bottom: 48px;
+}

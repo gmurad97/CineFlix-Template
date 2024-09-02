@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./Search.css";
 
 const Search = () => {
-    const [inputValue, setInputValue] = useState("dsfdsfds");
+    const [inputValue, setInputValue] = useState("");
 
     const handleInputChange = (e) => {
         setInputValue(e.target.value);
@@ -24,7 +24,7 @@ const Search = () => {
                     value={inputValue}
                     onChange={(e) => handleInputChange(e)}
                 />
-                {inputValue && <i className="fi fi-sr-cross-circle" onClick={() => handleClearInput()}></i>}
+                {inputValue && <i className="fi fi-sr-cross" onClick={() => handleClearInput()}></i>}
             </div>
             <div className="search__button-wrapper">
                 <button className="search__button" type="button">

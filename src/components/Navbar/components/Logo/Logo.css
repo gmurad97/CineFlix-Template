@@ -1,5 +1,5 @@
 .logo {
-    width: 116px;
+    width: 112px;
     height: auto;
 }
 
@@ -16,4 +16,15 @@
     height: 100%;
     object-fit: contain;
     object-position: center center;
+    animation: logoAnimation 3072ms linear infinite;
+}
+
+@keyframes logoAnimation {
+    from {
+        filter: hue-rotate(0deg);
+    }
+
+    to {
+        filter: hue-rotate(360deg);
+    }
 }

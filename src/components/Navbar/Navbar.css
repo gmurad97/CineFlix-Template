@@ -5,8 +5,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #0b0c0e;
-    padding: 14px 80px;
+    padding: 16px 96px;
 }
 
 .navbar__group {

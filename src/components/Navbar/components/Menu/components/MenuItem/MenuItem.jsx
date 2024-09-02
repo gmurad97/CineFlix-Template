@@ -7,21 +7,17 @@ const MenuItem = ({ dropdown, link, children }) => {
 
     return (
         <li className="menu__item">
-            {Array.isArray(dropdown) && dropdown.length > 0 ? (
-                <>
-                    <NavLink className={menuLinkClass} to={link}>{children}</NavLink>
-                    <div className="dropdown">
-                        <ul className="dropdown__list">
-                            {dropdown.map((item, idx) => (
-                                <li className="dropdown__item" key={idx}>
-                                    <NavLink className={dropdownLinkClass} to={item.link}>{item.name}</NavLink>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                </>
-            ) : (
-                <NavLink className={menuLinkClass} to={link}>{children}</NavLink>
+            <NavLink className={menuLinkClass} to={link}>{children}</NavLink>
+            {(Array.isArray(dropdown) && dropdown.length > 0) && (
+                <div className="dropdown">
+                    <ul className="dropdown__list">
+                        {dropdown.map((item, idx) => (
+                            <li className="dropdown__item" key={idx}>
+                                <NavLink className={dropdownLinkClass} to={item.link}>{item.name}</NavLink>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
             )}
         </li>
     );
