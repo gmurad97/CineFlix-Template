@@ -20,7 +20,7 @@ class TMDB {
 
     static getMovieVideos = async (movieId) => {
         try {
-            const response = await axios.get(ComposeUrl(TMDB_API_BASE_URL, `/movie/${movieId}/videos`), {
+            const response = await axios.get(ComposeUrl(TMDB_API_BASE_URL, `/movie/${movieId}/videos`, TMDB_API_KEY), {
                 "headers": {
                     "Accept": "application/json",
                 }

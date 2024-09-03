@@ -1,4 +1,4 @@
-.error__page{
+.error__page {
     width: 100%;
     height: 100dvh;
     display: flex;
@@ -7,14 +7,19 @@
     align-items: center;
 }
 
-.error__title{
-
+.error__title {
+    font-size: 36px;
+    color: #FFFFFF;
+    margin-bottom: 16px;
 }
 
-.error__description{
-
+.error__description {
+    font-size: 24px;
+    color: #FFFFFF;
+    margin-bottom: 16px;
 }
 
-.error__link{
-    
+.error__link {
+    font-size: 18px;
+    color: #FFFFFF;
 }

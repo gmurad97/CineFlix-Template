@@ -1,3 +1,4 @@
+import "./HomePage.css";
 import SectionContent from "../../components/common/SectionContent/SectionContent.jsx";
 import Navbar from "../../components/Navbar/Navbar.jsx";
 import MovieList from "../../components/MovieList/MovieList.jsx";
