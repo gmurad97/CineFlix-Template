@@ -7,6 +7,19 @@
     align-items: center;
 }
 
+.error__img-container {
+    width: 128px;
+    height: auto;
+    margin-bottom: 16px;
+}
+
+.error__img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center center;
+}
+
 .error__title {
     font-size: 36px;
     color: #FFFFFF;

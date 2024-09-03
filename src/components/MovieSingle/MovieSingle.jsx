@@ -55,7 +55,7 @@ const MovieSingle = ({ movieData }) => {
                             <div className="youtube__dialog" onClick={() => setShowModal(false)}>
                                 <div className="youtube__dialog-content" onClick={(e) => e.stopPropagation()}>
                                     <button className="youtube__dialog-close-btn" onClick={() => setShowModal(false)}>
-                                        <i class="fi fi-rs-circle-xmark"></i>
+                                        <i className="fi fi-rs-circle-xmark"></i>
                                     </button>
                                     <iframe
                                         title={`Youtube Video Teaser: ${youtubeKey}`}

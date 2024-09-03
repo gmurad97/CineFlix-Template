@@ -18,6 +18,7 @@ const Search = () => {
                 <input
                     className="search__input"
                     type="text"
+                    name="search_movies"
                     placeholder="Search Movies"
                     autoComplete="off"
                     required
