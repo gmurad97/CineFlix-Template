@@ -4,7 +4,7 @@ import Menu from "./components/Menu/Menu.jsx";
 import Search from "./components/Search/Search.jsx";
 import LogoDarkPng from "./assets/img/logo_dark.png";
 
-const Navbar = () => {
+const Navbar = ({ isOverlay = false }) => {
     const menuItem = [
         {
             "name": "Home",
@@ -57,7 +57,7 @@ const Navbar = () => {
     ];
 
     return (
-        <nav className="navbar">
+        <nav className={`navbar ${isOverlay ? "overlay" : ""}`}>
             <div className="navbar__group">
                 <Logo img={LogoDarkPng} link="/" />
                 <Menu items={menuItem} />

@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import "./MovieList.css";
+import MovieItem from "./components/MovieItem/MovieItem.jsx";
 import TMDB from "../../services/api/TMDB.js";
 import { setMovies } from "../../store/slices/moviesSlice.js";
-import MovieItem from "./components/MovieItem/MovieItem.jsx";
 
 const MovieList = () => {
     const movies = useSelector(state => state.movies.movies);
@@ -16,7 +16,10 @@ const MovieList = () => {
     return (
         <div className="movie__list">
             {movies.map((movie, idx) => (
-                <MovieItem movieData={movie} key={idx} />
+                <MovieItem
+                    movieData={movie}
+                    key={idx}
+                />
             ))}
         </div>
     );

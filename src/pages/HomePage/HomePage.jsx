@@ -1,13 +1,12 @@
-
-import Navbar from "../../components/Navbar/Navbar";
-import MovieList from "../../components/MovieList/MovieList";
-import SectionContent from "../../components/common/SectionContent/SectionContent";
-import Footer from "../../components/Footer/Footer";
+import SectionContent from "../../components/common/SectionContent/SectionContent.jsx";
+import Navbar from "../../components/Navbar/Navbar.jsx";
+import MovieList from "../../components/MovieList/MovieList.jsx";
+import Footer from "../../components/Footer/Footer.jsx";
 
 const HomePage = () => {
     return (
-        <div className="home">
-            <Navbar />
+        <div className="home__page">
+            <Navbar isOverlay={false} />
             <SectionContent title="Just added">
                 <MovieList />
             </SectionContent>

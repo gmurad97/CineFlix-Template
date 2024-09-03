@@ -3,7 +3,7 @@ import "./Footer.css";
 const Footer = () => {
     return (
         <footer className="footer">
-            <span>&copy; HD CineFlix</span>
+            <span className="footer__copyright">&copy; HD CineFlix</span>
         </footer>
     );
 }

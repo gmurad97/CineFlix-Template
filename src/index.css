@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap");
 @import url("https://cdn-uicons.flaticon.com/2.5.1/uicons-regular-straight/css/uicons-regular-straight.css");
-@import url('https://cdn-uicons.flaticon.com/2.5.1/uicons-solid-rounded/css/uicons-solid-rounded.css');
+@import url("https://cdn-uicons.flaticon.com/2.5.1/uicons-solid-rounded/css/uicons-solid-rounded.css");
 
 *,
 *::before,
@@ -10,34 +10,7 @@
     box-sizing: border-box;
 }
 
-::-webkit-scrollbar {
-    width: 7px;
-}
-
-::-webkit-scrollbar-track {
-    background-color: red;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: blue;
-}
-
-
 body {
-    background-color: #0b0c0e;
+    background-color: #0B0C0E;
     font-family: "Yantramanav", sans-serif;
-    /*     background-image: url("https://avatars.mds.yandex.net/i?id=39a8952c2ed9dee56bb53073cd3455bb_l-5250377-images-thumbs&n=13");
-    background-size: cover; */
 }
-
-/* body::-webkit-scrollbar{
-    width:7px
-    }
-    body::-webkit-scrollbar-track{
-    -webkit-box-shadow:inset 0 0 4px rgba(0,0,0,.3)
-    }
-    body::-webkit-scrollbar-thumb{
-    background-color:#31adff;
-    outline:1px solid #64c1ff;
-    border-radius:.6rem
-    } */

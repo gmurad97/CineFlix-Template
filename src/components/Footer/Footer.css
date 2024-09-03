@@ -5,12 +5,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: red;
-    padding: 18px;
-    margin-top: 32px;
+    padding: 32px;
+    margin-top: 64px;
 }
 
-.footer {
-    color: white;
-
+.footer__copyright {
+    font-size: 14px;
+    color: #F5F5F5;
 }

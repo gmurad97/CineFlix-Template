@@ -8,8 +8,16 @@
     padding: 16px 96px;
 }
 
+.navbar.overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1024;
+}
+
 .navbar__group {
     width: 100%;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
