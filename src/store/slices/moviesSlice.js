@@ -9,14 +9,10 @@ const moviesSlice = createSlice({
     "initialState": initialState,
     "reducers": {
         setMovies: (state, action) => {
-            state.movies = action.payload;
+            state.movies = [...state.movies, ...action.payload];
         }
     }
 });
-
-export const getMovieById = (state, movieId) => {
-    return state.movies.movies.find(movie => movie.id === movieId);
-}
 
 export const { setMovies } = moviesSlice.actions;
 export default moviesSlice.reducer;
